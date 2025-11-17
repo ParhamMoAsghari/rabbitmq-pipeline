@@ -1,0 +1,9 @@
+# Shell scripts should always use LF
+*.sh text eol=lf
+
+# Optional: force LF for other scripts
+*.bash text eol=lf
+*.zsh text eol=lf
+
+# Optional: force LF for all text files (careful with Windows binaries!)
+# * text=auto
