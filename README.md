@@ -127,8 +127,3 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ```
 
 * Use `docker-compose logs -f` to monitor message flow in real time.
-
-``` 
-
-Do you want me to do that?
-```
