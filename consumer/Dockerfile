@@ -5,7 +5,9 @@ WORKDIR /app
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY consumer.py wait-for-it.sh ./
+# Copy all Python files and scripts
+COPY . .
+
 RUN chmod +x wait-for-it.sh
 
 ENV PYTHONUNBUFFERED=1
