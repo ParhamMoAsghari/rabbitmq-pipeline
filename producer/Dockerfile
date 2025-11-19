@@ -6,8 +6,8 @@ WORKDIR /app
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy Python script and wait-for-it
-COPY producer.py wait-for-it.sh ./
+# Copy all Python files and scripts
+COPY . .
 
 # Ensure wait-for-it.sh is executable
 RUN chmod +x wait-for-it.sh
